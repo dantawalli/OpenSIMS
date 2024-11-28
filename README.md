@@ -1,2 +1,2 @@
-# OpensourceSMS
-Open Source School Management System is an open source school management by Buhari Nasir Ahmad
+# OpenSIMS
+OpenSIMS is an Open Source School Information Management System by Buhari Nasir Ahmad
