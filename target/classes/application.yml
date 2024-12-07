@@ -1,11 +1,11 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/opensims
-    username: postgres
-    password: postgres
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://localhost:3306/opensims?createDatabaseIfNotExist=true
+    username: dantawalli
+    password: p@55w0rd
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
@@ -20,5 +20,17 @@ spring:
 logging:
     level:
      org.springframework.security: DEBUG
+#jwt:
+#  secret: your-secure-jwt-secret
+#  expiration:
+#    ms: 3600000 # 1 hour in milliseconds
+server:
+  ssl:
+    enabled: true
+    key-store-type: PKCS12 # Specify the type of keystore (e.g., JKS, PKCS12)
+    key-store: classpath:certificate.p12 # Path to the keystore file
+    key-store-password: D@ntawall1 # Keystore password
+#debug: true
+
 
 

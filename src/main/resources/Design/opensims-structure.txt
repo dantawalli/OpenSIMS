@@ -1,0 +1,98 @@
+# Backend Structure
+
+```
+src/main/java/com/opensims/
+├── OpenSIMSApplication.java
+├── config/
+│   ├── SecurityConfig.java
+│   └── DatabaseConfig.java
+├── model/
+│   ├── Student.java
+│   ├── Teacher.java
+│   ├── Course.java
+│   ├── Attendance.java
+│   ├── Grade.java
+│   └── Fee.java
+├── repository/
+│   ├── StudentRepository.java
+│   ├── TeacherRepository.java
+│   ├── CourseRepository.java
+│   └── AttendanceRepository.java
+├── service/
+│   ├── StudentService.java
+│   ├── TeacherService.java
+│   ├── CourseService.java
+│   └── AttendanceService.java
+└── controller/
+    ├── StudentController.java
+    ├── TeacherController.java
+    ├── CourseController.java
+    └── AttendanceController.java
+
+# Frontend Structure
+
+src/
+├── components/
+│   ├── layout/
+│   │   ├── Sidebar.jsx
+│   │   ├── Header.jsx
+│   │   └── Dashboard.jsx
+│   ├── students/
+│   │   ├── StudentList.jsx
+│   │   ├── StudentForm.jsx
+│   │   └── StudentProfile.jsx
+│   └── shared/
+│       ├── Table.jsx
+│       ├── Form.jsx
+│       └── Button.jsx
+├── pages/
+│   ├── Students.jsx
+│   ├── Teachers.jsx
+│   ├── Courses.jsx
+│   └── Attendance.jsx
+├── services/
+│   └── api.js
+└── utils/
+    ├── auth.js
+    └── helpers.js
+
+# Database Schema
+
+students
+- id (PK)
+- student_number
+- first_name
+- last_name
+- email
+- class
+- admission_date
+
+teachers
+- id (PK)
+- employee_id
+- first_name
+- last_name
+- email
+- department
+
+courses
+- id (PK)
+- code
+- name
+- teacher_id (FK)
+- credits
+
+attendance
+- id (PK)
+- student_id (FK)
+- course_id (FK)
+- date
+- status
+
+grades
+- id (PK)
+- student_id (FK)
+- course_id (FK)
+- grade
+- semester
+```

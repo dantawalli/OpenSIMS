@@ -1,0 +1,148 @@
+GET https://localhost:8443/api/users
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=ABFEA95356773A4BC2CFE6623EA0AFF1
+content-length: 174
+
+{
+  "id": 0,
+  "firstName": "",
+  "MiddleName": "",
+  "lastName": "",
+  "username": "",
+  "email": "",
+  "password": "",
+  "roles": [],
+  "createdAt": "",
+  "updatedAt": ""
+}
+
+<> 2024-11-29T145311.200.txt
+
+###
+
+GET https://localhost:8443/api/users
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=ABFEA95356773A4BC2CFE6623EA0AFF1
+content-length: 174
+
+{
+  "id": 0,
+  "firstName": "",
+  "MiddleName": "",
+  "lastName": "",
+  "username": "",
+  "email": "",
+  "password": "",
+  "roles": [],
+  "createdAt": "",
+  "updatedAt": ""
+}
+
+###
+
+GET https://localhost:8443/api/users
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=ABFEA95356773A4BC2CFE6623EA0AFF1
+content-length: 174
+
+{
+  "id": 0,
+  "firstName": "",
+  "MiddleName": "",
+  "lastName": "",
+  "username": "",
+  "email": "",
+  "password": "",
+  "roles": [],
+  "createdAt": "",
+  "updatedAt": ""
+}
+
+###
+
+GET https://localhost:8443/api/users
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=ABFEA95356773A4BC2CFE6623EA0AFF1
+content-length: 174
+
+{
+  "id": 0,
+  "firstName": "",
+  "MiddleName": "",
+  "lastName": "",
+  "username": "",
+  "email": "",
+  "password": "",
+  "roles": [],
+  "createdAt": "",
+  "updatedAt": ""
+}
+
+###
+
+GET https://localhost:8443/api/users
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: JSESSIONID=ABFEA95356773A4BC2CFE6623EA0AFF1
+content-length: 174
+
+{
+  "id": 0,
+  "firstName": "",
+  "MiddleName": "",
+  "lastName": "",
+  "username": "",
+  "email": "",
+  "password": "",
+  "roles": [],
+  "createdAt": "",
+  "updatedAt": ""
+}
+
+###
+
+GET https://localhost:8443/api/users
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 174
+
+{
+  "id": 0,
+  "firstName": "",
+  "MiddleName": "",
+  "lastName": "",
+  "username": "",
+  "email": "",
+  "password": "",
+  "roles": [],
+  "createdAt": "",
+  "updatedAt": ""
+}
+
+###
+
+GET http://localhost:8443/api/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2024-11-29T144933.400.txt
+
+###
+

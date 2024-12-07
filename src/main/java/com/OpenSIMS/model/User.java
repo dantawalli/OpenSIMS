@@ -2,14 +2,15 @@ package com.OpenSIMS.model;
 
 import com.OpenSIMS.enums.RoleEnum;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -17,13 +18,16 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String firstName;
+
+    private String MiddleName;
+
+    private String lastName;
 
     @Column(unique = true, nullable = false)
     private String username;
@@ -34,8 +38,8 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @Enumerated
-    private RoleEnum role;
+    @Column(columnDefinition="tinyint(1) default 0")
+    private boolean isAdmin;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(

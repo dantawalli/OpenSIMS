@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-243.21565.193">
-    <data-source name="postgres" uuid="33cf8657-9b9d-4e19-b7f1-c30413b21c10">
+    <data-source name="opensims@localhost" uuid="57186ab7-31de-4086-9a9c-0feab29e8676">
       <database-info product="PostgreSQL" version="17.2 (Debian 17.2-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.4" dbms="POSTGRES" exact-version="17.2" exact-driver-version="42.7">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

@@ -22,9 +22,14 @@ public class UserController {
         return new ResponseEntity<>(userService.createUser(user), HttpStatus.CREATED);
     }
 
+//    @GetMapping
+//    public ResponseEntity<List<User>> getAllUsers() {
+//        return ResponseEntity.ok(userService.getAllUsers());
+//    }
+
     @GetMapping
-    public ResponseEntity<List<User>> getAllUsers() {
-        return ResponseEntity.ok(userService.getAllUsers());
+    public String hello() {
+        return "Hello World";
     }
 
     @GetMapping("/{userId}")
