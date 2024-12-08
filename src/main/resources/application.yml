@@ -17,6 +17,9 @@ spring:
     user:
       name: admin
       password: admin
+  data:
+    rest:
+      base-path: /api
 logging:
     level:
      org.springframework.security: DEBUG
@@ -30,7 +33,12 @@ server:
     key-store-type: PKCS12 # Specify the type of keystore (e.g., JKS, PKCS12)
     key-store: classpath:certificate.p12 # Path to the keystore file
     key-store-password: D@ntawall1 # Keystore password
-#debug: true
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
 
 
 

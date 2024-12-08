@@ -1,11 +1,13 @@
 package com.OpenSIMS.controller;
 
+import com.OpenSIMS.model.Student;
 import com.OpenSIMS.model.User;
 import com.OpenSIMS.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -18,23 +20,28 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<User> createUser(@RequestBody User user) {
+    public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
         return new ResponseEntity<>(userService.createUser(user), HttpStatus.CREATED);
     }
 
-//    @GetMapping
-//    public ResponseEntity<List<User>> getAllUsers() {
-//        return ResponseEntity.ok(userService.getAllUsers());
-//    }
-
     @GetMapping
-    public String hello() {
-        return "Hello World";
+    public ResponseEntity<List<User>> getUsers() {
+        return ResponseEntity.ok(userService.getUsers());
     }
 
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUser(@PathVariable Long userId) {
         return ResponseEntity.ok(userService.getUser(userId));
+    }
+    @PutMapping("/{userId}")
+    public ResponseEntity<User> updateUser(@PathVariable Long userId, @Valid @RequestBody User user) {
+        return ResponseEntity.ok(userService.updateUser(userId, user));
+    }
+
+    @DeleteMapping("/{userId}")
+    public ResponseEntity<Void> deleteUser(@PathVariable Long userId) {
+         userService.deleteUser(userId);
+         return ResponseEntity.noContent().build();
     }
 }
 

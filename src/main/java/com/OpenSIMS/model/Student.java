@@ -1,30 +1,28 @@
 package com.OpenSIMS.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
-public class Student extends User{
+public class Student{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String rollNo;
     private String grade;
     private String section;
     private Date DOB;
     private String address;
     private String phone;
-    @ManyToOne
-    @JoinColumn(name = "father_id")
-    private Parent father;
-    @ManyToOne
-    @JoinColumn(name = "mother_id")
-    private Parent mother;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<Parent> parent;
     private Date dateOfJoining;
 
 }
