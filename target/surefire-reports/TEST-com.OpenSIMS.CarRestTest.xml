@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.OpenSIMS.OpenSIMSTests" time="3.787" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.OpenSIMS.CarRestTest" time="1.145" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -48,7 +48,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/3d/0t0vhvyj2m30_zwy784tbmdr0000gn/T/"/>
     <property name="idea.version" value="2024.3"/>
-    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="com.zaxxer.hikari.pool_number" value="2"/>
     <property name="java.version" value="23.0.1"/>
     <property name="user.dir" value="/Users/buharinasirahmad/Documents/Buhari/Skills/Java/OpenSIMS"/>
     <property name="os.arch" value="aarch64"/>
@@ -65,10 +65,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="contextLoads" classname="com.OpenSIMS.OpenSIMSTests" time="0.142">
-    <system-out><![CDATA[16:29:09.136 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.OpenSIMS.OpenSIMSTests]: OpenSIMSTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:29:09.190 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.OpenSIMS.OpenSIMS for test class com.OpenSIMS.OpenSIMSTests
-16:29:09.261 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="testAuthentication" classname="com.OpenSIMS.CarRestTest" time="0.37">
+    <system-out><![CDATA[2024-12-08T16:29:12.833+01:00  INFO 86232 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.OpenSIMS.CarRestTest]: CarRestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-08T16:29:12.837+01:00  INFO 86232 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.OpenSIMS.OpenSIMS for test class com.OpenSIMS.CarRestTest
+2024-12-08T16:29:12.839+01:00  INFO 86232 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -79,35 +79,94 @@
 
  :: Spring Boot ::                (v3.4.0)
 
-2024-12-08T16:29:09.404+01:00  INFO 86232 --- [           main] com.OpenSIMS.OpenSIMSTests               : Starting OpenSIMSTests using Java 23.0.1 with PID 86232 (started by buharinasirahmad in /Users/buharinasirahmad/Documents/Buhari/Skills/Java/OpenSIMS)
-2024-12-08T16:29:09.404+01:00  INFO 86232 --- [           main] com.OpenSIMS.OpenSIMSTests               : No active profile set, falling back to 1 default profile: "default"
-2024-12-08T16:29:09.996+01:00  INFO 86232 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-08T16:29:10.029+01:00  INFO 86232 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 6 JPA repository interfaces.
-2024-12-08T16:29:10.411+01:00  INFO 86232 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-08T16:29:10.438+01:00  INFO 86232 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-12-08T16:29:10.452+01:00  INFO 86232 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-08T16:29:10.571+01:00  INFO 86232 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-08T16:29:10.583+01:00  INFO 86232 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-08T16:29:10.814+01:00  INFO 86232 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ae4c424
-2024-12-08T16:29:10.815+01:00  INFO 86232 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-08T16:29:10.849+01:00  WARN 86232 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-12-08T16:29:10.858+01:00  INFO 86232 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+2024-12-08T16:29:12.855+01:00  INFO 86232 --- [           main] com.OpenSIMS.CarRestTest                 : Starting CarRestTest using Java 23.0.1 with PID 86232 (started by buharinasirahmad in /Users/buharinasirahmad/Documents/Buhari/Skills/Java/OpenSIMS)
+2024-12-08T16:29:12.856+01:00  INFO 86232 --- [           main] com.OpenSIMS.CarRestTest                 : No active profile set, falling back to 1 default profile: "default"
+2024-12-08T16:29:13.003+01:00  INFO 86232 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-08T16:29:13.009+01:00  INFO 86232 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 6 JPA repository interfaces.
+2024-12-08T16:29:13.077+01:00  INFO 86232 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-08T16:29:13.077+01:00  INFO 86232 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-08T16:29:13.081+01:00  INFO 86232 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-08T16:29:13.082+01:00  INFO 86232 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-08T16:29:13.096+01:00  INFO 86232 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@296c6cc1
+2024-12-08T16:29:13.096+01:00  INFO 86232 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-08T16:29:13.097+01:00  WARN 86232 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-08T16:29:13.097+01:00  INFO 86232 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 9.0.1
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-12-08T16:29:11.348+01:00  INFO 86232 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-08T16:29:11.418+01:00  INFO 86232 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-08T16:29:11.638+01:00  INFO 86232 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
-2024-12-08T16:29:11.735+01:00  WARN 86232 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-12-08T16:29:11.928+01:00  INFO 86232 --- [           main] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/Users/buharinasirahmad/Documents/Buhari/Skills/Java/OpenSIMS/target/test-classes/com/OpenSIMS/model] does not exist
-2024-12-08T16:29:12.204+01:00  INFO 86232 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2024-12-08T16:29:12.223+01:00  WARN 86232 --- [           main] thorizationManagerRequestMatcherRegistry : One of the patterns in [api/auth/login] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2024-12-08T16:29:12.249+01:00 DEBUG 86232 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2024-12-08T16:29:12.640+01:00  INFO 86232 --- [           main] com.OpenSIMS.OpenSIMSTests               : Started OpenSIMSTests in 3.385 seconds (process running for 3.898)
+2024-12-08T16:29:13.161+01:00  INFO 86232 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-08T16:29:13.193+01:00  INFO 86232 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-08T16:29:13.234+01:00  INFO 86232 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-08T16:29:13.258+01:00  WARN 86232 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-08T16:29:13.319+01:00  INFO 86232 --- [           main] .i.s.PathMatchingResourcePatternResolver : Skipping search for files matching pattern [**/*.class]: directory [/Users/buharinasirahmad/Documents/Buhari/Skills/Java/OpenSIMS/target/test-classes/com/OpenSIMS/model] does not exist
+2024-12-08T16:29:13.426+01:00  INFO 86232 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-08T16:29:13.434+01:00  WARN 86232 --- [           main] thorizationManagerRequestMatcherRegistry : One of the patterns in [api/auth/login] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2024-12-08T16:29:13.441+01:00 DEBUG 86232 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, AuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-08T16:29:13.590+01:00  INFO 86232 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-12-08T16:29:13.590+01:00  INFO 86232 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-12-08T16:29:13.591+01:00  INFO 86232 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-12-08T16:29:13.605+01:00  INFO 86232 --- [           main] com.OpenSIMS.CarRestTest                 : Started CarRestTest in 0.765 seconds (process running for 4.863)
+2024-12-08T16:29:13.645+01:00 DEBUG 86232 --- [           main] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2024-12-08T16:29:13.654+01:00 DEBUG 86232 --- [           main] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-08T16:29:13.657+01:00 DEBUG 86232 --- [           main] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.middle_name,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2024-12-08T16:29:13.934+01:00 DEBUG 86232 --- [           main] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/auth/login
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"37"]
+             Body = {"username":"abba","password":"abba"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.OpenSIMS.controller.LoginController
+           Method = com.OpenSIMS.controller.LoginController#getToken(AccountCredentials)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Authorization:"BearereyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmJhIiwiZXhwIjoxNzMzNzU4MTUzfQ.-fq_Fs95AecbXivomcyDGBi8xq6rfS0_Xwid_sLZkrA", Access-Control-Expose-Headers:"Authorization", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
 ]]></system-out>
   </testcase>
 </testsuite>

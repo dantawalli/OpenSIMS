@@ -5,50 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c33b641-bf0b-4ab9-8b55-db800c3312e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/config/AuthEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/config/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/record/AccountCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/OpenSIMS/UserRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/OpenSIMS/UserRestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/ParentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/ParentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/TeacherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Parent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Parent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/Teacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/repository/ParentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/repository/ParentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/OpenSIMS/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/OpenSIMS/OpenSIMSTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/OpenSIMS/OpenSIMSTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/certificate.p12" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/certificate.p12" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/ParentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/ParentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/TeacherController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Parent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Parent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/Teacher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/User$UserBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/repository/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/OpenSIMS/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/OpenSIMS/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/OpenSIMS/OpenSIMSTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/OpenSIMS/OpenSIMSTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.OpenSIMS.OpenSIMSTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.OpenSIMS.OpenSIMSTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.OpenSIMS.UserRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.OpenSIMS.UserRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.OpenSIMS.OpenSIMSTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.OpenSIMS.OpenSIMSTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.OpenSIMS.UserRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.OpenSIMS.UserRepositoryTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,36 +68,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.CarRestTest.executor": "Run",
-    "JUnit.OpenSIMS in openSIMS.executor": "Run",
-    "JUnit.OpenSIMSTests.contextLoads.executor": "Run",
-    "JUnit.OpenSIMSTests.executor": "Run",
-    "JUnit.UserRepositoryTest.executor": "Run",
-    "Maven.openSIMS [test].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.OpenSIMS.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/buharinasirahmad/Documents/Buhari/Skills/Java/OpenSIMS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.CarRestTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OpenSIMS in openSIMS.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OpenSIMSTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OpenSIMSTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.openSIMS [test].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.OpenSIMS.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/buharinasirahmad/Documents/Buhari/Skills/Java/OpenSIMS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -137,29 +114,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.OpenSIMS" />
       <option name="MAIN_CLASS_NAME" value="com.OpenSIMS.CarRestTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OpenSIMS in openSIMS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openSIMS" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/OpenSIMS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OpenSIMSTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openSIMS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.OpenSIMS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.OpenSIMS" />
-      <option name="MAIN_CLASS_NAME" value="com.OpenSIMS.OpenSIMSTests" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,11 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="OpenSIMS" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
     <configuration name="openSIMS [test]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -237,20 +187,24 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="OpenSIMS" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <configuration name="OpenSIMS" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="openSIMS" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.OpenSIMS.OpenSIMS" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.CarRestTest" />
+      <item itemvalue="JUnit.OpenSIMSTests.contextLoads" />
+      <item itemvalue="JUnit.UserRepositoryTest" />
+      <item itemvalue="Maven.openSIMS [test]" />
+      <item itemvalue="Spring Boot.OpenSIMS" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OpenSIMS in openSIMS" />
         <item itemvalue="JUnit.CarRestTest" />
         <item itemvalue="JUnit.UserRepositoryTest" />
-        <item itemvalue="JUnit.OpenSIMSTests" />
         <item itemvalue="JUnit.OpenSIMSTests.contextLoads" />
       </list>
     </recent_temporary>
@@ -272,7 +226,8 @@
       <option name="presentableId" value="Default" />
       <updated>1732879571322</updated>
       <workItem from="1732879572488" duration="8079000" />
-      <workItem from="1732947012464" duration="49268000" />
+      <workItem from="1732947012464" duration="66173000" />
+      <workItem from="1733848896139" duration="2957000" />
     </task>
     <servers />
   </component>

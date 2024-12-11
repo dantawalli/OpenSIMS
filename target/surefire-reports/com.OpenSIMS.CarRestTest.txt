@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.OpenSIMS.OpenSIMSTests
+Test set: com.OpenSIMS.CarRestTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.787 s -- in com.OpenSIMS.OpenSIMSTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.145 s -- in com.OpenSIMS.CarRestTest

@@ -27,12 +27,12 @@ logging:
 #  secret: your-secure-jwt-secret
 #  expiration:
 #    ms: 3600000 # 1 hour in milliseconds
-server:
-  ssl:
-    enabled: true
-    key-store-type: PKCS12 # Specify the type of keystore (e.g., JKS, PKCS12)
-    key-store: classpath:certificate.p12 # Path to the keystore file
-    key-store-password: D@ntawall1 # Keystore password
+#server:
+#  ssl:
+#    enabled: true
+#    key-store-type: PKCS12 # Specify the type of keystore (e.g., JKS, PKCS12)
+#    key-store: classpath:certificate.p12 # Path to the keystore file
+#    key-store-password: D@ntawall1 # Keystore password
 springdoc:
   api-docs:
     path: /api-docs

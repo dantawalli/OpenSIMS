@@ -8,7 +8,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.validation.constraints.NotBlank;
 import java.util.Date;
-import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Data
@@ -18,8 +18,8 @@ import java.util.Set;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     @NotBlank(message = "First Name cannot be blank")
     private String firstName;
